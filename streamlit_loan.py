@@ -14,7 +14,7 @@ background_css = """
     background-repeat: no-repeat;
 }
 
-.st-emotion-cache-sh2krr p {
+.row-widget p {
     color: black;
     font-weight: bold;
     font-size: 18px;
@@ -32,7 +32,7 @@ st.markdown(background_css, unsafe_allow_html=True)
 # Load the pre-trained model
 @st.cache_resource
 def load_model():
-    with open("./model.pkl", "rb") as f:
+    with open("./assets/model.pkl", "rb") as f:
         model = pickle.load(f)
     return model
 
